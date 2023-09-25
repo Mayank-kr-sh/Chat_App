@@ -1,14 +1,17 @@
 const express = require("express");
-const { chats } = require("./data/data");
-
 const app = express();
+const chat = require("./data/data");
+
+require("dotenv").config();
+
+const PORT = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send("API is running....");
 });
 
 app.get("/api/chat", (req, res) => {
-  res.send(chats);
+  res.json(chat);
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
