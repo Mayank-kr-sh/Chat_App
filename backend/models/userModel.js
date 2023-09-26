@@ -1,5 +1,5 @@
-const mongooes = require("mongoose");
-const userSchema = mongooes.Schema(
+const mongoose = require("mongoose");
+const userSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -19,7 +19,7 @@ const userSchema = mongooes.Schema(
       default:
         "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
     },
-    isAdim: {
+    isAdmin: {
       type: Boolean,
       default: false,
     },
@@ -27,4 +27,4 @@ const userSchema = mongooes.Schema(
   { timestamps: true }
 );
 
-module.exports = mongooes.model("User", userSchema);
+module.exports = mongoose.model("User", userSchema);

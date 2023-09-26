@@ -22,31 +22,28 @@ const Homepages = () => {
         display="flex"
         justifyContent="center"
         p={3}
-        bg="white"
+        bg="rgba(255, 255, 255, 0.5)"
         w="100%"
-        // bgGradient={{
-        //   base: "linear(to-r, teal.300,blue.500)",
-        //   md: "linear(to-r, teal.300,blue.500)",
-        //   lg: "linear(to-r, teal.300,blue.500)",
-        // }}
         m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
+        borderColor="rgba(0, 0, 0, 0.5)"
       >
         <Text fontSize="3xl" fontFamily="Work sans">
           Welcome to ChatApp
         </Text>
       </Box>
       <Box
-        bg="white"
+        bg="rgba(255, 255, 255, 0.5)"
         w="100%"
         p={4}
         borderRadius="lg"
         borderWidth="1px"
+        borderColor="rgba(0, 0, 0, 0.5)"
         color="blackAlpha.900"
       >
         <Tabs isFitted variant="enclosed">
-          <TabList mb="1em">
+          <TabList mb="1em" borderColor="rgba(255, 255, 255, 0.5)">
             <Tab>Login</Tab>
             <Tab>Sign Up</Tab>
           </TabList>

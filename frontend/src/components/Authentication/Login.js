@@ -110,11 +110,11 @@ const Login = () => {
       </Button>
       <Button
         variant="solid"
-        colorScheme="red"
+        colorScheme="green"
         width="100%"
         onClick={() => {
-          setEmail("guest@example.com");
-          setPassword("123456");
+          setEmail("Mayank@test.com");
+          setPassword("test@123");
         }}
       >
         Get Guest User Credentials
