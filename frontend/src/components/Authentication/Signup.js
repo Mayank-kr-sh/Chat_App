@@ -134,6 +134,7 @@ const Signup = () => {
         <FormLabel>Name</FormLabel>
         <Input
           variant="filled"
+          autoComplete="off"
           placeholder="Enter Your Name"
           onChange={(e) => setName(e.target.value)}
         />
@@ -142,6 +143,7 @@ const Signup = () => {
         <FormLabel>Email Address</FormLabel>
         <Input
           variant="filled"
+          autoComplete="off"
           type="email"
           placeholder="Enter Your Email Address"
           onChange={(e) => setEmail(e.target.value)}
@@ -152,6 +154,7 @@ const Signup = () => {
         <InputGroup size="md">
           <Input
             variant="filled"
+            autoComplete="off"
             type={show ? "text" : "password"}
             placeholder="Enter Password"
             onChange={(e) => setPassword(e.target.value)}
@@ -168,6 +171,7 @@ const Signup = () => {
         <InputGroup size="md">
           <Input
             variant="filled"
+            autoComplete="off"
             type={show ? "text" : "password"}
             placeholder="Confirm password"
             onChange={(e) => setConfirmpassword(e.target.value)}

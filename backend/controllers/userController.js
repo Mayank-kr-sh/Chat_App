@@ -59,6 +59,7 @@ const authUser = asyncHandler(async (req, res) => {
   }
 });
 
+// search user from our backend using query string and regex method in mongodb
 // to send data to our backend there are two methods
 // 1. using post method (body)
 // 2. using query string (/api/user?search=abc)
@@ -81,7 +82,6 @@ const allUsers = asyncHandler(async (req, res) => {
         ],
       }
     : {};
-
   const users = await User.find(keyword).find({ _id: { $ne: req.user._id } });
   res.send(users);
 });

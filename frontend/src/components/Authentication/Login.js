@@ -76,6 +76,7 @@ const Login = () => {
         <FormLabel>Email Address</FormLabel>
         <Input
           variant="filled"
+          autoComplete="off"
           value={email}
           type="email"
           placeholder="Enter Your Email Address"
@@ -87,6 +88,7 @@ const Login = () => {
         <InputGroup size="md">
           <Input
             variant="filled"
+            autoComplete="off"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             type={show ? "text" : "password"}

@@ -10,7 +10,7 @@ const chatModel = mongoose.Schema(
       type: Boolean,
       required: true,
     },
-    user: [
+    users: [
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
@@ -20,7 +20,7 @@ const chatModel = mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "Message",
     },
-    gropAdmin: {
+    groupAdmin: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
